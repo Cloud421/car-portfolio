@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Yanone+Kaffeesatz&display=swap');
+
+h1, a, h2, p, h6 {
+    font-family: 'Montserrat', sans-serif;    
+}
+
+/** 
+CAR CARDS
+**/
+.card-container {
+  padding-bottom: 10em;
+}
+
+.car-description {
+  font-size: 1.0em !important;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-title {
+    margin-top: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 2rem;
+}
+
+.car-name {
+    padding-top: 1rem;
+    font-weight: medium;
+    text-align: center;
+}
+
+hr {
+  width: 65%;
+  border-width: medium;
+  border-color: #000000 !important;
+}
+
+.porsche-line{
+    border-color: #00b2ff !important;
+}
+
+.porsche-card  {
+    border-style: groove;
+    border-color: #00b2ff !important;
+}
+
+.McLaren-line{
+    border-color: orange !important;
+}
+
+.McLaren-card{
+    border-style: groove;    
+    border-color: orange !important;
+}
+
+.ferrari-line{
+    border-color: #FF2800 !important;
+}
+
+.ferrari-card {
+    border-style: groove;
+    border-color: #FF2800 !important;
+}
+
+.bmw-line{
+  border-color: gold !important;
+}
+
+.bmw-card {
+  border-style: groove;
+  border-color: gold !important;
+}
+
+h6 {
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 6rem;
+}
+
+.car {
+    background-color: transparent;
+    height: 19rem;
+    width: 5rem;
+    perspective: 1000px; 
+    margin-bottom: 5rem;    
+    margin-top: 5rem;   
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  .car-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-style: groove;
+    border-color: #00b2ff;
+  }
+  
+  .car:hover .car-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .car-front, .car-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .car-back {
+    background-color: #f8f9fa;
+    color: black;
+    transform: rotateY(180deg);
+    overflow:scroll;
+  }
+
+
+/** 
+MEDIA QUERIES (only needed to adjust car photo height) 
+**/
+
+@media only screen and (max-width: 480px) {
+  .car-inner {
+    position: relative;
+    width: 100%;
+    height: 500%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-style: groove;
+    border-color: #00b2ff;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .car-inner {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-style: groove;
+    border-color: #00b2ff;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .car-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-style: groove;
+    border-color: #00b2ff;
+  }
+}
+
+
+

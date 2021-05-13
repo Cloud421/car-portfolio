@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Yanone+Kaffeesatz&display=swap');
+
+h1, a, h2, p, h6 {
+    font-family: 'Montserrat', sans-serif;    
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/** 
+NAVBAR  
+**/
+.navbar a {
+    font-family: 'Montserrat', sans-serif;    
+    background-color: transparent;
+}
+
+.nav-item {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/** 
+HOME PAGE   
+**/
+.home-page {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 48rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../img/race-track.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+.header-text {
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+}
+
+.collection-name {
+  padding-top: 1em;
+  font-size: 0.75em;
+  color: darkgray !important
+}
+
+.btn-link {
+  color:black !important;
+}
+
+
+.center {
+  height: 200px;
+  position: relative;
+}
+  
+.center-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fas {
+  color: gray;
+  padding-top: 2em;
+}
+
+i:hover {
+  columns: white;
+}
+
+
+/** 
+OVERVIEW
+**/
+#overview {
+  padding-top: 2em;
+}
+
+.overview-line {
+  width: 65%;
+  color: black;
+  border-width: medium;
+}
+
+.row {
+  margin-bottom: 2rem;
+}
+
+.cars-outline-img {
+  width: 20em;
+  height: 15em;
+}
+
+.cars-outline .cars-outline-item {
+  /* cursor: pointer; */
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  /* overflow: hidden; */
+}
+
+/** 
+FOOTER
+**/
+.footer-container {
+    width: 100%;
+    padding: 0rem 1rem;
+    text-align: center;
+}
+
+/** 
+GENERAL
+**/
+main {
+  background-color: #AAAAAA;
+  width: 100%;
+}
+
+p{
+  color: black;
+}
+
+header{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  font-size: 25pt;
+}
+
+.Porsches{
+  
+  color: white;
+  background-color: #00b2ff;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  margin-left: 50px;
+  margin-right: 85%;
+  padding: 20px;
+  font-size: 20pt;
+  border-radius: 30px;
+}
+
+.menu_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.grid_container_porsches {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+  row-gap: 10px; 
+}
+
+.McLaren{
+color: white;
+  background-color: orange;
+  margin-top: -20px;
+  margin-bottom: -10px;
+  margin-left: 50px;
+  margin-right: 84%;
+  padding: 20px;
+  font-size: 20pt;
+  border-radius: 30px;
+}
+
+.grid_container_McLaren {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+  row-gap: 20px;
+} 
+
+.Ferraris{
+  color: white;
+  background-color: #FF2800;
+  margin-top: -15px;
+  margin-bottom: -10px;
+  margin-left: 50px;
+  margin-right: 86%;
+  padding: 20px;
+  font-size: 20pt;
+  border-radius: 30px;
+}
+ .grid_container_Ferrari {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+  row-gap: 20px;
+} 
